@@ -35,7 +35,11 @@ plugin_manager install_bundle  target: git+https://github.com/saeid600305-beep/d
 plugin_manager install_bundle  target: git+https://github.com/saeid600305-beep/dsh-persian-rtl.git#path:/packages/dsh-plugin-persian-rtl-ui
 ```
 
-برای نصب از گیت‌هاب، `git` باید روی `PATH` باشد. برای نسخهٔ قفل‌شده، کامیت را جای نام شاخه بگذارید.
+برای نصب از گیت‌هاب، `git` باید روی `PATH` باشد. برای نسخهٔ قفل‌شده، تگ یا کامیت را پیش از `path:` بیاورید:
+
+```text
+plugin_manager install_bundle  target: git+https://github.com/saeid600305-beep/dsh-persian-rtl.git#v1.0.0&path:/packages/dsh-plugin-persian-rtl
+```
 
 ### از مسیر محلی
 
@@ -63,7 +67,7 @@ packages/
 
 ## انتشار در npm
 
-نام هر دو بسته در npm آزاد است. برای انتشار:
+نام هر دو بسته در npm آزاد است. برای انتشار، به `npm` یا `pnpm` نیاز دارید:
 
 ```bash
 npm login
@@ -72,6 +76,8 @@ npm publish --access public
 cd ../dsh-plugin-persian-rtl-ui
 npm publish --access public
 ```
+
+با pnpm هم همین کار را می‌کنید: `pnpm login` و بعد `pnpm publish --access public`.
 
 پیش از انتشار می‌توانید محتوای بستهٔ نهایی را ببینید:
 
