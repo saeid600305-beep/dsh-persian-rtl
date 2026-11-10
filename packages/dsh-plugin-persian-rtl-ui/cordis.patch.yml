@@ -1,0 +1,8 @@
+# dsh-plugin-persian-rtl-ui — bundle patch.
+#
+# One row for the Web client half. The host half registers nothing: the plugin
+# only declares `dsh.client`, so the browser loads `lib/client.js`, which marks
+# Persian text blocks with their real direction and right-aligns them.
+- insert:
+    - id: persian-rtl-ui
+      name: 'dsh-plugin-persian-rtl-ui'

@@ -1,0 +1,9 @@
+# dsh-plugin-persian-rtl — bundle patch.
+#
+# One row: the system-prompt policy that makes every agent in this profile
+# answer in Persian with RTL-correct, orthographically correct text, unless the
+# user's question is in English. The row has no services and no dependencies;
+# it only registers a prompt section.
+- insert:
+    - id: persian-rtl-writing
+      name: 'dsh-plugin-persian-rtl'

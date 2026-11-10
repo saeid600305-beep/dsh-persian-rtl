@@ -1,0 +1,32 @@
+{
+  "name": "dsh-plugin-persian-rtl",
+  "version": "1.0.0",
+  "description": "Persian writing policy for every DSH agent: right-to-left output and correct Persian orthography, in Persian unless the question is in English.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "policy.md",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "persian",
+    "farsi",
+    "rtl",
+    "orthography"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
