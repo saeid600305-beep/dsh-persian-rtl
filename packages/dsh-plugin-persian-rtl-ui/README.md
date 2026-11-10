@@ -16,6 +16,20 @@
 
 ## نصب
 
+از npm، بعد از انتشار:
+
+```text
+plugin_manager install_bundle  target: dsh-plugin-persian-rtl-ui
+```
+
+مستقیم از گیت‌هاب:
+
+```text
+plugin_manager install_bundle  target: git+https://github.com/saeid600305-beep/dsh-persian-rtl.git#path:/packages/dsh-plugin-persian-rtl-ui
+```
+
+یا از مسیر محلی:
+
 ```text
 plugin_manager install_bundle  target: <absolute path to this directory>
 ```

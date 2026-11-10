@@ -15,20 +15,37 @@
 
 ## نصب
 
-از داخل DSH، با ابزار `plugin_manager`:
+هر دو بسته با ابزار `plugin_manager` داخل DSH نصب می‌شوند.
+
+### از npm
+
+بعد از انتشار، کافی است نام بسته را بدهید:
 
 ```text
 plugin_manager install_bundle  target: dsh-plugin-persian-rtl
 plugin_manager install_bundle  target: dsh-plugin-persian-rtl-ui
 ```
 
-یا از مسیر محلی:
+### مستقیم از گیت‌هاب
+
+بدون نیاز به npm، از همین مخزن نصب کنید. pnpm زیرپوشهٔ هر بسته را از روی `path:` برمی‌دارد:
+
+```text
+plugin_manager install_bundle  target: git+https://github.com/saeid600305-beep/dsh-persian-rtl.git#path:/packages/dsh-plugin-persian-rtl
+plugin_manager install_bundle  target: git+https://github.com/saeid600305-beep/dsh-persian-rtl.git#path:/packages/dsh-plugin-persian-rtl-ui
+```
+
+برای نصب از گیت‌هاب، `git` باید روی `PATH` باشد. برای نسخهٔ قفل‌شده، کامیت را جای نام شاخه بگذارید.
+
+### از مسیر محلی
+
+```bash
+git clone https://github.com/saeid600305-beep/dsh-persian-rtl.git
+```
 
 ```text
 plugin_manager install_bundle  target: <absolute path to packages/dsh-plugin-persian-rtl>
 ```
-
-پس از انتشار در npm، کاربران می‌توانند فقط نام بسته را وارد کنند.
 
 ## ساختار مخزن
 
@@ -42,6 +59,24 @@ packages/
     lib/index.js
     lib/client.js
     cordis.patch.yml
+```
+
+## انتشار در npm
+
+نام هر دو بسته در npm آزاد است. برای انتشار:
+
+```bash
+npm login
+cd packages/dsh-plugin-persian-rtl
+npm publish --access public
+cd ../dsh-plugin-persian-rtl-ui
+npm publish --access public
+```
+
+پیش از انتشار می‌توانید محتوای بستهٔ نهایی را ببینید:
+
+```bash
+npm pack --dry-run
 ```
 
 ## توسعه

@@ -24,16 +24,24 @@
 
 ## نصب
 
-از خود DSH (ابزار `plugin_manager`) یا از خط فرمان:
+از داخل DSH، با ابزار `plugin_manager`:
+
+از npm، بعد از انتشار:
+
+```text
+plugin_manager install_bundle  target: dsh-plugin-persian-rtl
+```
+
+مستقیم از گیت‌هاب، بدون نیاز به npm:
+
+```text
+plugin_manager install_bundle  target: git+https://github.com/saeid600305-beep/dsh-persian-rtl.git#path:/packages/dsh-plugin-persian-rtl
+```
+
+یا از مسیر محلی:
 
 ```text
 plugin_manager install_bundle  target: <absolute path to this directory>
-```
-
-یا:
-
-```bash
-dsh plugin --profile desktop add C:\path\to\persian-rtl-plugin
 ```
 
 پس از نصب، افزونه به‌صورت باندل انتخاب و فعال می‌شود. با HMR فعال، تغییرات بدون راه‌اندازی مجدد اعمال می‌شوند.

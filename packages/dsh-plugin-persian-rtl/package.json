@@ -13,17 +13,33 @@
     "lib/index.js",
     "policy.md",
     "cordis.patch.yml",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "keywords": [
     "dsh",
     "dsh-plugin",
+    "deepseek-harness",
     "persian",
     "farsi",
     "rtl",
     "orthography"
   ],
   "license": "MIT",
+  "author": "saeid600305-beep",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saeid600305-beep/dsh-persian-rtl.git",
+    "directory": "packages/dsh-plugin-persian-rtl"
+  },
+  "homepage": "https://github.com/saeid600305-beep/dsh-persian-rtl#readme",
+  "bugs": {
+    "url": "https://github.com/saeid600305-beep/dsh-persian-rtl/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
