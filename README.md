@@ -13,6 +13,19 @@
 
 بستهٔ دوم فقط ظاهر را درست می‌کند: هر بلوک فارسی را تشخیص می‌دهد، جهت واقعی‌اش را ست می‌کند و راست‌چین نشان می‌دهد؛ کد و ورودی‌ها LTR می‌مانند.
 
+## دانلود نسخهٔ آماده
+
+اگر نمی‌خواهید از npm یا گیت نصب کنید، فایل‌های آمادهٔ نسخهٔ ۱٫۰٫۰ در پوشهٔ [`dist`](dist) هستند:
+
+- [`dsh-plugin-persian-rtl-1.0.0.tgz`](dist/dsh-plugin-persian-rtl-1.0.0.tgz)
+- [`dsh-plugin-persian-rtl-ui-1.0.0.tgz`](dist/dsh-plugin-persian-rtl-ui-1.0.0.tgz)
+
+دانلودشان کنید و مسیر فایل را به `plugin_manager` بدهید، یا مستقیم از همین مخزن نصب کنید:
+
+```text
+plugin_manager install_bundle  target: https://github.com/saeid600305-beep/dsh-persian-rtl/raw/main/dist/dsh-plugin-persian-rtl-1.0.0.tgz
+```
+
 ## نصب
 
 هر دو بسته با ابزار `plugin_manager` داخل DSH نصب می‌شوند.
